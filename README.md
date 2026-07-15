@@ -56,16 +56,25 @@ PORT=5000
 ## Screenshots
 
 ### Landing Page
-![Landing Page](screenshots/landing.png)
+![Landing Page](screenshots/1-landing.png)
+
+### React App - Notes Empty State
+![Notes Empty](screenshots/2-notes-empty.png)
+
+### Add Note Form
+![Add Note](screenshots/3-add-note.png)
 
 ### React App - Notes List
-![Notes App](screenshots/app.png)
+![Notes List](screenshots/4-notes-list.png)
 
 ### AI Summarize Feature
-![AI Summarize](screenshots/ai-summarize.png)
+![AI Summarize](screenshots/5-ai-summarize.png)
 
-### MCP Tool Call in Claude Desktop
-![MCP Tool Call](screenshots/mcp-tool.png)
+### Search Notes
+![Search](screenshots/6-search.png)
+
+### MCP Inspector
+![MCP Inspector](screenshots/7-mcp-inspector.png)
 
 ## MCP Integration
 
