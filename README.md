@@ -5,7 +5,7 @@ AI-powered study notes app — summarize, quiz, and organize your notes with Ope
 ## Tech Stack
 
 - **Frontend:** React (Vite)
-- **Backend:** Express.js + MongoDB (Mongoose)
+- **Backend:** Express.js + MongoDB Atlas (Mongoose)
 - **AI:** OpenAI API (GPT-4o-mini)
 - **MCP Server:** Model Context Protocol (stdio)
 - **Landing:** HTML + CSS + Vanilla JS
@@ -17,7 +17,7 @@ AI-powered study notes app — summarize, quiz, and organize your notes with Ope
 ```bash
 cd server
 npm install
-cp .env.example .env   # Add your OPENAI_API_KEY
+cp .env.example .env   # Add your MONGODB_URI and OPENAI_API_KEY
 npm start              # Runs on http://localhost:5000
 ```
 
@@ -40,7 +40,7 @@ node index.js          # Runs on stdio
 ## .env.example
 
 ```
-MONGODB_URI=mongodb://localhost:27017/studymate
+MONGODB_URI=your_mongodb_atlas_connection_string_here
 OPENAI_API_KEY=your_openai_api_key_here
 PORT=5000
 ```
@@ -55,7 +55,17 @@ PORT=5000
 
 ## Screenshots
 
-<!-- Add screenshots here -->
+### Landing Page
+![Landing Page](screenshots/landing.png)
+
+### React App - Notes List
+![Notes App](screenshots/app.png)
+
+### AI Summarize Feature
+![AI Summarize](screenshots/ai-summarize.png)
+
+### MCP Tool Call in Claude Desktop
+![MCP Tool Call](screenshots/mcp-tool.png)
 
 ## MCP Integration
 
