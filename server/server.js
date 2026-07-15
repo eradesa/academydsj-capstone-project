@@ -3,12 +3,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const OpenAI = require("openai");
+const path = require("path");
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.use("/landing", express.static(path.join(__dirname, "..", "landing")));
 
 mongoose
   .connect(process.env.MONGODB_URI)
