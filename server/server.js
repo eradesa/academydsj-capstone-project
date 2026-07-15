@@ -12,6 +12,7 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/landing", express.static(path.join(__dirname, "..", "landing")));
+app.get("/", (req, res) => res.redirect("/landing/index.html"));
 
 mongoose
   .connect(process.env.MONGODB_URI)
