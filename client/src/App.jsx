@@ -51,6 +51,14 @@ function App() {
 
   return (
     <div className="app">
+      <nav className="navbar">
+        <span className="nav-brand">StudyMate</span>
+        <div className="nav-links">
+          <a href="http://localhost:5173" className="nav-active">Notes</a>
+          <a href="../landing/index.html">Home</a>
+        </div>
+      </nav>
+
       <header>
         <h1>StudyMate</h1>
         <p>Your AI-powered study notes</p>
