@@ -58,23 +58,23 @@ PORT=5000
 ### Landing Page
 ![Landing Page](screenshots/1-landing.png)
 
-### React App - Notes Empty State
-![Notes Empty](screenshots/2-notes-empty.png)
+### Add Note
+![Add Note](screenshots/2-add-note.png)
 
-### Add Note Form
-![Add Note](screenshots/3-add-note.png)
+### Notes List
+![Notes List](screenshots/3-notes-list.png)
 
-### React App - Notes List
-![Notes List](screenshots/4-notes-list.png)
+### Notes with AI Summary
+![Notes with Summary](screenshots/4-notes-list.png)
 
 ### AI Summarize Feature
 ![AI Summarize](screenshots/5-ai-summarize.png)
 
-### Search Notes
-![Search](screenshots/6-search.png)
-
 ### MCP Inspector
-![MCP Inspector](screenshots/7-mcp-inspector.png)
+![MCP Inspector](screenshots/6-mcp-inspector.png)
+
+### MCP Tool Call
+![MCP Tool Call](screenshots/7-mcp-inspector.png)
 
 ## MCP Integration
 
