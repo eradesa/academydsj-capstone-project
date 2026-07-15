@@ -13,12 +13,12 @@ app.use(express.json());
 
 app.use("/landing", express.static(path.join(__dirname, "..", "landing")));
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static(path.join(__dirname, "..", "client", "dist")));
-  app.get("/app", (req, res) => res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html")));
-}
-
 app.get("/", (req, res) => res.redirect("/landing/index.html"));
+
+if (process.env.NODE_ENV === "production") {
+  app.use("/app", express.static(path.join(__dirname, "..", "client", "dist")));
+  app.get("/app/*", (req, res) => res.sendFile(path.join(__dirname, "..", "client", "dist", "index.html")));
+}
 
 mongoose
   .connect(process.env.MONGODB_URI)
